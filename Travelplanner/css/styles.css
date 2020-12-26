@@ -1,0 +1,30 @@
+body {background: url(../img/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+#container{position:relative;width:980px;margin:0 auto}
+#logo{text-align:center;color:black}
+#mainContainer{background:rgba(255, 255, 255);width: 100%;min-height:400px;display:none;padding-bottom:20px}
+#traveltable{display:table;width:100%;table-layout: fixed;}
+tbody, thead{width:100%;}
+#antalPersonerForm{margin:5px;width:200px}
+#antalPersonerDiv{border-radius: 10px 10px 10px 10px;width:250px;height:300px;margin:0 auto; background:rgba(255, 255, 255);padding: 20px;}
+.glyphicon-ok:before {content: "\f00c";}
+.glyphicon-remove:before {content: "\f00d";}
+.glyphicon {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+.editableform .form-control, .editableform .control-group{width:100%;}
+td {white-space: nowrap;overflow: hidden;text-overflow: ellipsis; }
+#beskrivning{width:40%}
+#hotel, #flyg, #hyrbil, #taBortRad{width:15%}
+.editable-input, .editable-buttons{width:50%;margin-top:10px}
+#refresh{display:none}
+#footerButtons{position:fixed;bottom:50px;width:100%}
+button{border-radius:0px !important}

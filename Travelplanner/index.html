@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelplanner</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap-editable.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+  		
+  </style>
+</head>
+<body>
+<div id="container">
+<h1 id="logo">Travelplanner</h1>
+   <div id="antalPersonerDiv">
+		<form id="antalPersonerForm">
+		<div class="form-group">
+			<label>Adults:</label>
+				<select class="custom-select" id="antalPersonerText" name="antalPersoner">
+	   			 	<option value="1">1</option>
+	   			 	<option value="2">2</option>
+		   			 <option value="3">3</option>
+		   			 <option value="4">4</option>
+		   			 <option value="5">5</option>
+		   			 <option value="6">6</option>
+		   			 <option value="7">7</option>
+  				</select>
+  				<label>Children:</label>
+  					<select class="custom-select" id="antalPersonerTextBarn" name="antalPersonerBarn">
+	    			<option value="0">0</option>
+	   			 	<option value="1">1</option>
+	   			 	<option value="2">2</option>
+		   			 <option value="3">3</option>
+		   			 <option value="4">4</option>
+		   			 <option value="5">5</option>
+		   			 <option value="6">6</option>
+		   			 <option value="7">7</option>
+  				</select>
+				<label>Currency:</label>
+  					<select class="custom-select" id="symbol" name="symbol">
+	    			<option value="$">$</option>
+	   			 	<option value="kr">kr</option>
+	   			 	<option value="£">£</option>
+		   			 <option value="€">€</option>
+  				</select>
+			<button type="button" class="btn btn-info mx-auto m-2" id="sendButton" name="submit">Skicka</button>
+			</div>
+		</form>
+	</div>
+	<div id="mainContainer">
+		<table class="table table-hover" id="traveltable">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col" id="beskrivning"><i class="fas fa-pen"></i> Description</th>
+					<th scope="col" id="hotel"><i class="fas fa-hotel"></i> Hotel</th>
+					<th scope="col" id="flyg"><i class="fas fa-plane-departure"></i> Flight</th>
+					<th scope="col" id="hyrbil"><i class="fas fa-car"></i> Car Rental</th>
+					<th scope="col" id="taBortRad"><i class="far fa-trash-alt"></i> Radera rad</th>
+				</tr>  
+			</thead>
+			<tbody>
+				<tr id="insertBefore">
+					<td disabled>Total price/passenger</td>
+					<td id="sumHotel" disabled>- (symbol)</td>
+					<td id="sumFlyg" disabled>- (symbol)</td>
+					<td id="sumHyrBil" disabled>- (symbol)</td>
+					<td disabled></td>
+				</tr>
+				<tr>
+					<td id="total" disabled>Total: </td>
+					<td id="totalHotel" disabled>- (symbol)</td>
+					<td id="totalFlyg" disabled>- (symbol)</td>
+					<td id="totalHyrBil" disabled>- (symbol)</td>
+					<td disabled></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="footerButtons">
+	<button id="addRow" class="btn btn-info mx-2" type="button" name="addRow">Add row</button>
+	<button id="changeButton" class="btn btn-info mx-2" type="button" name="changeButton">Change settings</button>
+	<button id="refresh" class="btn btn-info mx-2" type="button" name="refresh">Refresh</button>
+	</div>
+	</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-editable.min.js"></script>
+	<script src="js/travelplanner.js"></script>	
+</body>
+</html>
