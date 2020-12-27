@@ -49,5 +49,6 @@ a:hover{color:#ccc}
     h2{font-size:18px}
     .title{font-size: 18px;}
      .project{    flex-shrink: 0;
-        width: 100%;}
+        width: 100%;padding:0}
+    .projectbox{padding:0}
   }
